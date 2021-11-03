@@ -1,0 +1,3 @@
+C:/Users/danse/Desktop/EXERCICES_C/exercice_1/cmake-build-debug/CMakeFiles/exercice_1.dir
+C:/Users/danse/Desktop/EXERCICES_C/exercice_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/danse/Desktop/EXERCICES_C/exercice_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
