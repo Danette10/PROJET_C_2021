@@ -5,22 +5,31 @@
  * par Dan Sebag
  */
 int main() {
-    int n, i, j;
-    int stars = 1;
-    printf("Saisir le nombre de ligne:\n");
-    scanf("%d", &n);
-
-        for(i = 1; i <= (2 * n - 1); i++){
-            for(j = 1; j <= stars; j++){
-                printf("*  ");
+    int nb, i,j;
+    printf("Saisir un entier :\n");
+    scanf("%d", &nb);
+    for (i = 0; i < nb - i - 1; i++){
+        for (j = 0; j < nb; j++){
+            if(j <= i || j >= nb - i -1){
+                printf("*");
+            } else{
+                printf(" ");
             }
 
-            if(i < n)
-                stars++;
-            else
-                stars--;
-            printf("\n");
+        }
+        printf("\n");
+    }
+    for (i = nb - i - 1; i > 0; i--){
+        for (j = nb; j > 0; j--){
+            if(j <= i || j >= nb - i + 1){
+                printf("*");
+            } else{
+                printf(" ");
+            }
 
+        }
+        printf("\n");
     }
     return 0;
+
 }
