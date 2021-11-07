@@ -7,7 +7,7 @@
 int main() {
     char retry;
     do {
-        unsigned int nbUser, temp, modulo, choose, digitSum = 0, tempDigit, tempDigitSum = 0;
+        unsigned int nbUser, temp, modulo, choose, digitSum = 0, tempDigit, tempDigitSum = 0, magic;
         printf("1. Partie 1\n");
         printf("2. Partie 2\n");
         scanf("%u", &choose);
@@ -17,18 +17,22 @@ int main() {
                 printf("Saisir un nombre entier:\n");
                 scanf("%u", &nbUser);
 
-                do {
+
+                do{
                     modulo = nbUser%10;
                     nbUser -= modulo;
                     nbUser /= 10;
-                    temp = modulo;
+                    if(modulo == 4 || modulo == 5 || modulo == 6)
+                        magic = 1;
+                    else
+                        magic = 0;
+                }while (nbUser > 0 && magic == 1);
 
-                } while (nbUser != 0 && temp == 4 || temp == 5 || temp == 6);
-
-                if(temp == 4 || temp == 5 || temp == 6)
-                    printf("C'est un nombre magique !\n");
-                else
+                if(magic == 0)
                     printf("Ce n'est pas un nombre magique !\n");
+                else
+                    printf("C'est un nombre magique !\n");
+
                 break;
 
             case 2:
