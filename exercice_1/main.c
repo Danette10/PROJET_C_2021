@@ -5,31 +5,38 @@
  * par Dan Sebag
  */
 int main() {
-    int nb, i,j;
-    printf("Saisir un entier :\n");
-    scanf("%d", &nb);
-    for (i = 0; i < nb - i - 1; i++){
-        for (j = 0; j < nb; j++){
-            if(j <= i || j >= nb - i -1){
-                printf("*");
-            } else{
-                printf(" ");
-            }
+    char retry;
+    do {
+        int nb, i,j;
+        printf("Saisir un entier :\n");
+        scanf("%d", &nb);
+        for (i = 0; i < nb - i - 1; i++){
+            for (j = 0; j < nb; j++){
+                if(j <= i || j >= nb - i -1){
+                    printf("*");
+                } else{
+                    printf(" ");
+                }
 
-        }
-        printf("\n");
-    }
-    for (i = nb - i - 1; i > 0; i--){
-        for (j = nb; j > 0; j--){
-            if(j <= i || j >= nb - i + 1){
-                printf("*");
-            } else{
-                printf(" ");
             }
-
+            printf("\n");
         }
-        printf("\n");
-    }
+        for (i = nb - i - 1; i > 0; i--){
+            for (j = nb; j > 0; j--){
+                if(j <= i || j >= nb - i + 1){
+                    printf("*");
+                } else{
+                    printf(" ");
+                }
+
+            }
+            printf("\n");
+        }
+        fflush(stdin);
+        printf("Voulez vous recommencer ? (o = oui | O = oui)\n");
+        scanf("%c", &retry);
+    } while (retry == 'o' || retry == 'O');
+
     return 0;
 
 }
