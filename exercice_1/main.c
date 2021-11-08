@@ -13,9 +13,9 @@ int main() {
         for (i = 0; i < nb - i - 1; i++){
             for (j = 0; j < nb; j++){
                 if(j <= i || j >= nb - i -1){
-                    printf("* ");
+                    printf("*  ");
                 } else{
-                    printf("  ");
+                    printf("   ");
                 }
 
             }
@@ -27,7 +27,7 @@ int main() {
             if(impair == nb){
                 printf("\n");
             } else
-                printf("* ");
+                printf("*  ");
         }
 
         for(pair=0;pair <= nb && nb%2 == 0;pair++)
@@ -36,15 +36,15 @@ int main() {
             if(pair == nb){
                 printf("\n");
             } else
-                printf("* ");
+                printf("*  ");
         }
 
         for (i = nb - i - 1; i > 0; i--){
             for (j = nb; j > 0; j--){
                 if(j <= i || j >= nb - i + 1){
-                    printf("* ");
+                    printf("*  ");
                 } else{
-                    printf("  ");
+                    printf("   ");
                 }
 
             }
