@@ -6,7 +6,7 @@
  * le 01/11/2021
  */
 int main() {
-    unsigned int nb1, nb2, lastNb;
+    unsigned int nb1, nb2;
 
 
     printf("Saisir un premier entier :\n");
@@ -15,9 +15,9 @@ int main() {
     scanf("%u",&nb2);
 
     do {
-        int pow2 = 0, saveNb1, rest, p;
+        int pow2 = 0, saveNb1, rest, p, binary=0;
         unsigned int counter1 = 0, counter0 = 0;
-        unsigned long long binary=0;
+        
         saveNb1 = nb1;
         while (saveNb1 > 0)
         {
