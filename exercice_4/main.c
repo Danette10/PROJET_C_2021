@@ -44,8 +44,10 @@ int main() {
         nb1++;
 
     } while (nb1 <= nb2);
-
-    printf("et %d\n", temp1);
+    if(j == 1)
+        printf("%d\n", temp1);
+    else if(j > 1)
+        printf(" et %d", temp1);
 
     return 0;
 }
