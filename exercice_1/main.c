@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /*
  * Exercice 1 du projet de C
  * le 30/10/2021
@@ -54,6 +55,8 @@ int main() {
         printf("Voulez vous recommencer ? (o = oui | O = oui)\n");
         scanf("%c", &retry);
     } while (retry == 'o' || retry == 'O');
+    
+    system("PAUSE");
 
     return 0;
 
