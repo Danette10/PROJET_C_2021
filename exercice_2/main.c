@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /*
  * Exercice n°2 du projet de C
  * par Dan Sebag
@@ -79,5 +80,7 @@ int main() {
 
     } while (retry == 'O' || retry == 'o');
     printf("Merci d'avoir lancer le programme !\n");
+    
+    system("PAUSE");
     return 0;
 }
