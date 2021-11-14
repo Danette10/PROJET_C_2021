@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define octet16 65536
 
 int main() {
@@ -70,5 +71,6 @@ int main() {
         scanf("%c", &restart);
     } while (restart == 'o' || restart == 'O');
     
+    system("PAUSE");
     return 0;
 }
