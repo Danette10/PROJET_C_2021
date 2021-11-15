@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define octet16 65536
+#define OCTET16 65536
 
 int main() {
     char restart;
@@ -24,7 +24,7 @@ int main() {
             counter1 = 0;
             i = 0;
             if(nb1 < 0)
-                saveNb1 = nb1 + octet16;
+                saveNb1 = nb1 + OCTET16;
             else if(nb1 > 0)
                 saveNb1 = nb1;
 
